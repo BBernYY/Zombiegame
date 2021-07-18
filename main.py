@@ -12,7 +12,7 @@ VEL = 10
 current = 0
 BG = pygame.image.load(os.path.join("assets", "lvl1", "bg.png"))
 DATA = []
-pygame.display.set_caption("Zombiespel - Beta 0.4")
+pygame.display.set_caption("Zombiegame - Beta 0.4")
 gameIcon = pygame.image.load(os.path.join("assets", "lvl1", "zombie.png"))
 pygame.display.set_icon(gameIcon)
 pygame.mixer.music.set_volume(0.25)
@@ -75,7 +75,7 @@ class draw:
     def MENU():
         WIN.blit(BG, (0, 0))
         menufont = pygame.font.SysFont('couriernew', 50)
-        WIN.blit(menufont.render("Zombiespel", False, (255, 255, 255)), (WX // 2 - 150, WY // 2 - 100))
+        WIN.blit(menufont.render("Zombiegame", False, (255, 255, 255)), (WX // 2 - 150, WY // 2 - 100))
         menufont = pygame.font.SysFont('couriernew', 20)
         WIN.blit(menufont.render("Press space to start", False, (255, 255, 255)), (WX // 2 - 125, WY // 2 + 200))
         pygame.display.update()
